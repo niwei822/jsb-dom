@@ -115,4 +115,19 @@ export function prompt5() {
  */
 export function prompt6() {
   // FIXME
+  function fizzBuzz() {
+    for (let i = 1; i <= 100; i++) {
+      const span = document.createElement('span');
+      span.innerHTML = i;
+      if (i % 3 === 0 && i % 5 === 0) {
+        span.style.color = 'purple';
+      } else if (i % 3 === 0) {
+        span.style.color = 'blue';
+      } else if (i % 5 === 0) {
+        span.style.color = 'red';
+      }
+      document.querySelector('#prompt-6').appendChild(span);
+    }
+  }
+  fizzBuzz();
 }
